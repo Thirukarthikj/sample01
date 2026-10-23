@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery & Infrastructure | Bobby Packaging Sivakasi</title>
+  <meta name="description" content="View the manufacturing plant, high-speed extrusion machinery, and printed products from Bobby Packaging Sivakasi." />
+  <meta name="theme-color" content="#002140" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="css/remixicon.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1.1" />
+  <!-- Scoped Component Stylesheets (Class names strictly related to file) -->
+  <link rel="stylesheet" href="css/QuickEnquiryModal.css" />
+</head>
+<body class="font-sans bg-slate-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navigation -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/85 backdrop-blur-md border-b border-sky-100 shadow-sm py-4">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-white rounded-xl p-1.5 shadow-sm flex items-center justify-center transition-transform group-hover:scale-105 border border-sky-100">
+          <img src="images/logobg.png" alt="Bobby Packaging Logo" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <span class="brand-title font-display text-xl font-bold tracking-tight text-slate-900 transition-colors">Bobby Packaging</span>
+          <span class="brand-tagline text-[10px] tracking-wider uppercase font-semibold text-sky-600 hidden sm:block">Sivakasi, Tamil Nadu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav (Centered, Title Case like reference) -->
+      <nav id="navContainer" class="hidden lg:flex items-center gap-7 xl:gap-8">
+        <a href="index.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Home</a>
+        <a href="about.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">About Us</a>
+        <a href="products.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Primary Bags</a>
+        <a href="films.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Specialty Films</a>
+        <a href="gallery.html" class="nav-link font-semibold text-[15px] transition-colors py-1 text-sky-600 border-b-2 border-sky-500">Machinery & Works</a>
+        <a href="contact.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Contact</a>
+      </nav>
+
+      <!-- Action Button (WhatsApp Enquiry Pill like reference image) -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#enquiryModal" class="open-enquiry-modal bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md cursor-pointer flex items-center gap-2 group">
+          <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
+          <span>WhatsApp Enquiry</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menuToggle" class="lg:hidden text-slate-800 p-2 text-2xl focus:outline-none cursor-pointer" aria-label="Toggle navigation">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-sky-100 px-6 py-6 shadow-xl transition-all duration-300">
+      <div class="flex flex-col gap-3 text-center">
+        <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Home</a>
+        <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">About Us</a>
+        <a href="products.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Primary Bags</a>
+        <a href="films.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Specialty Films</a>
+        <a href="gallery.html" class="text-sm font-semibold text-sky-600 py-2">Machinery & Works</a>
+        <a href="contact.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Contact</a>
+        <div class="pt-4 border-t border-sky-100 flex flex-col gap-3">
+          <a href="#enquiryModal" class="open-enquiry-modal w-full bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold py-3 rounded-full cursor-pointer flex items-center justify-center gap-2 shadow-sm">
+            <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
+            <span>WhatsApp Enquiry</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Header Section with Background Image -->
+  <section class="relative pt-36 pb-20 text-center text-white bg-primary-dark overflow-hidden">
+    <div 
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('images/mainroadoffice.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 space-y-3">
+      <span class="text-xs font-bold text-gold-light uppercase tracking-widest">
+        Our Visual Showcase
+      </span>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
+        Transforming Ideas into Reality with Precision Packaging
+      </h1>
+    </div>
+  </section>
+
+  <!-- 2. Filter Pills Navigation -->
+  <section class="max-w-6xl mx-auto px-6 py-8 flex justify-center flex-wrap gap-2.5">
+    <button class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider transition-all border cursor-pointer bg-primary text-white border-primary shadow-md" data-category="All">
+      All
+    </button>
+    <button class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider transition-all border cursor-pointer bg-white text-gray-600 border-gray-200 hover:border-primary hover:text-primary" data-category="Products">
+      Products
+    </button>
+    <button class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider transition-all border cursor-pointer bg-white text-gray-600 border-gray-200 hover:border-primary hover:text-primary" data-category="Infrastructure">
+      Infrastructure
+    </button>
+    <button class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider transition-all border cursor-pointer bg-white text-gray-600 border-gray-200 hover:border-primary hover:text-primary" data-category="Works">
+      Works
+    </button>
+  </section>
+
+  <!-- 3. Responsive Staggered Image Grid -->
+  <section class="max-w-7xl mx-auto px-6 pb-20">
+    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="LD Bread Packaging Cover" data-desc="Flexible and hygienic virgin LDPE bread packaging manufactured in Sivakasi.">
+        <img src="images/bread-cover-1.jpg" alt="LD Bread Packaging Cover" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">LD Bread Packaging Cover</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">LD Bread Packaging Cover</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="HM Salt Packaging Bag" data-desc="High-density moisture-proof salt bag with maximum tear resistance.">
+        <img src="images/salt-cover.jpg" alt="HM Salt Packaging Bag" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">HM Salt Packaging Bag</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">HM Salt Packaging Bag</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="LD Roll Specialty Film" data-desc="Blown film extrusion lines producing continuous rolls for automated packaging.">
+        <img src="images/ld-roll2.jpg" alt="LD Roll Specialty Film" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">LD Roll Specialty Film</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">LD Roll Specialty Film</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="PP Bags Divinity Covers" data-desc="High transparency polypropylene bags for textiles and retail commodities.">
+        <img src="images/devinity-product-covers.jpg" alt="PP Bags Divinity Covers" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">PP Bags Divinity Covers</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">PP Bags Divinity Covers</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="PET Detergent Barrier Pouches" data-desc="Multi-layer liquid and detergent barrier packaging pouches.">
+        <img src="images/detergent-bags.jpg" alt="PET Detergent Barrier Pouches" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">PET Detergent Barrier Pouches</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">PET Detergent Barrier Pouches</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="BOPP High-Gloss Packaging Bag" data-desc="Crystal-clear high-gloss BOPP retail snack and garment bags.">
+        <img src="images/boppbag.png" alt="BOPP High-Gloss Packaging Bag" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">BOPP High-Gloss Packaging Bag</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">BOPP High-Gloss Packaging Bag</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Products" data-title="PVC Transparent Pouch" data-desc="Durable transparent PVC pouches with zipper closures for cosmetics and stationery.">
+        <img src="images/pvc.webp" alt="PVC Transparent Pouch" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Products</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">PVC Transparent Pouch</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">PVC Transparent Pouch</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Works" data-title="Snack Packaging Covers" data-desc="Custom-printed snack covers designed for freshness preservation and brand appeal.">
+        <img src="images/snack-covers-6.jpg" alt="Snack Packaging Covers" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Works</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Snack Packaging Covers</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Snack Packaging Covers</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 9 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Works" data-title="Rusk Packaging Bags" data-desc="Bakery packaging engineered to retain crispness and shelf life.">
+        <img src="images/rusk-bags.jpg" alt="Rusk Packaging Bags" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Works</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Rusk Packaging Bags</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Rusk Packaging Bags</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 10 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Works" data-title="Bread Packaging Cover Design" data-desc="High-definition flexo printed bread bags for commercial bakeries.">
+        <img src="images/bread-cover-4.jpg" alt="Bread Packaging Cover Design" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Works</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Bread Packaging Cover Design</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Bread Packaging Cover Design</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 11 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Works" data-title="Milk Packaging Pouch Covers" data-desc="Hygienic, leak-proof multi-layer milk packaging covers.">
+        <img src="images/milk-cover-3.jpg" alt="Milk Packaging Pouch Covers" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Works</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Milk Packaging Pouch Covers</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Milk Packaging Pouch Covers</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 12 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Bobby Packaging Office Unit" data-desc="Client consultation and order execution facility on Srivilliputtur Road, Sivakasi.">
+        <img src="images/mainroadoffice.jpg" alt="Bobby Packaging Office Unit" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Bobby Packaging Office Unit</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Bobby Packaging Office Unit</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 13 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Manufacturing Plant Infrastructure" data-desc="Modern industrial floor space housing extrusion lines and cleanroom packaging bays.">
+        <img src="images/infrastructure.jpg" alt="Manufacturing Plant Infrastructure" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Manufacturing Plant Infrastructure</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Manufacturing Plant Infrastructure</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 14 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Precision Extrusion Machine 1" data-desc="Multi-layer polymer blow extruder for precision gauge consistency.">
+        <img src="images/machine1.jpg" alt="Precision Extrusion Machine 1" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Precision Extrusion Machine 1</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Precision Extrusion Machine 1</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 15 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Film Blowing Machine 2" data-desc="High-speed continuous film extrusion with automated cooling ring.">
+        <img src="images/machine2.jpg" alt="Film Blowing Machine 2" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Film Blowing Machine 2</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Film Blowing Machine 2</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 16 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Specialty Film Machine 4" data-desc="Slitting and rewinding machine delivering flawless edge-cut continuous rolls.">
+        <img src="images/machine4.jpg" alt="Specialty Film Machine 4" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Specialty Film Machine 4</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Specialty Film Machine 4</h4>
+        </div>
+      </div>
+
+      <!-- Gallery Item 17 -->
+      <div class="gallery-item relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-square group cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1" data-category="Infrastructure" data-title="Industrial Sealing Machine 6" data-desc="Automated bag conversion unit with high-pressure bottom and side heat sealing.">
+        <img src="images/machine6.jpg" alt="Industrial Sealing Machine 6" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6 text-left">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-gold-light mb-1 font-sans">Infrastructure</span>
+          <h4 class="text-white font-bold font-display text-base leading-snug">Industrial Sealing Machine 6</h4>
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary-dark/70 backdrop-blur-sm px-3.5 py-2 rounded-lg group-hover:opacity-0 transition-opacity duration-300 text-left border border-white/5">
+          <h4 class="text-white font-semibold font-display text-sm leading-tight line-clamp-1">Industrial Sealing Machine 6</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Memory Creation CTA Banner -->
+  <section class="py-20 bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100 shadow-[0_4px_25px_-5px_rgba(0,33,64,0.02)] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 text-left space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold font-display text-primary leading-tight">
+            Interested in working with Bobby Packaging?
+          </h2>
+          <p class="text-sm text-gray-500 leading-relaxed max-w-lg font-sans">
+            We’re continually working to change the way people think about and engage with our packaging products. Get in touch with our Sivakasi team today.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <button class="open-enquiry-modal px-8 py-3.5 bg-primary hover:bg-primary-light text-white font-bold text-sm rounded-xl cursor-pointer shadow-md transition-all">
+              Contact Now
+            </button>
+            <a href="products.html" class="px-8 py-3.5 border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm rounded-xl flex items-center justify-center gap-1.5 cursor-pointer transition-all">
+              <span>Our Products</span>
+              <i class="ri-arrow-right-s-line text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Manufacturing Facility Image Column -->
+        <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] bg-slate-200">
+          <img
+            src="images/machine2.jpg"
+            alt="Bobby Packaging Manufacturing Machinery"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center">
+            <img src="images/logobg.png" alt="Bobby Packaging" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <span class="font-display text-lg font-bold tracking-tight text-white block">Bobby Packaging</span>
+            <span class="text-[9px] tracking-widest uppercase font-bold text-gold-light">Sivakasi, Tamil Nadu</span>
+          </div>
+        </div>
+        <p class="text-xs text-gray-300 leading-relaxed font-sans">
+          Premier manufacturer of primary packing bags and specialty films founded by Aakash Arun. Located in Sivakasi with worldwide quality standards.
+        </p>
+        <div class="flex space-x-3 pt-2">
+          <a href="#" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+          <a href="#" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="tel:+918754002737" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Quick Navigation</h4>
+        <ul class="space-y-2.5 text-xs text-gray-300">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">Our Products</a></li>
+          <li><a href="films.html" class="hover:text-white transition-colors">Specialty Films</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Machinery Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Our Products</h4>
+        <ul class="space-y-2.5 text-xs text-gray-300">
+          <li><a href="products.html" class="hover:text-white transition-colors">LD Bags (Bakery Covers)</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">HM Bags (Heavy Duty)</a></li>
+          <li><a href="films.html" class="hover:text-white transition-colors">LD Rolls & Specialty Films</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">PP Bags (Garments)</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">PET Liquid Pouches</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">BOPP Snack Covers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Head Office & Plant</h4>
+        <div class="space-y-3 text-xs text-gray-300">
+          <p class="flex items-start gap-2.5">
+            <i class="ri-map-pin-2-line text-gold text-base shrink-0 mt-0.5"></i>
+            <span>1/527, H4 Unit Industrial Estate, Srivilliputtur Road, Sivakasi-626 124, Tamil Nadu, India</span>
+          </p>
+          <p class="flex items-center gap-2.5">
+            <i class="ri-phone-line text-gold text-base shrink-0"></i>
+            <a href="tel:+918754002737" class="hover:text-white">+91 87540 02737</a>
+          </p>
+          <p class="flex items-center gap-2.5">
+            <i class="ri-mail-line text-gold text-base shrink-0"></i>
+            <a href="mailto:bobbypackaging18@gmail.com" class="hover:text-white">bobbypackaging18@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+      <div>© 2026 Bobby Packaging. All Rights Reserved.</div>
+      <div>Designed for Excellence in Sivakasi, Tamil Nadu.</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Overlay -->
+  <div id="galleryLightbox" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="lightbox-backdrop fixed inset-0 bg-black/85 backdrop-blur-md cursor-pointer"></div>
+    <div class="relative z-10 max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+      <div class="relative max-h-[75vh] bg-black flex items-center justify-center">
+        <img id="lightboxImg" src="" alt="Lightbox Preview" class="max-h-[75vh] w-auto max-w-full object-contain" />
+        <button id="closeLightbox" class="absolute top-4 right-4 bg-black/60 hover:bg-black text-white rounded-full p-2.5 text-xl cursor-pointer transition-colors" aria-label="Close Lightbox">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="p-6 bg-white text-left">
+        <h3 id="lightboxTitle" class="text-xl font-bold font-display text-primary mb-1"></h3>
+        <p id="lightboxDesc" class="text-xs text-gray-500 font-sans"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enquiry Modal Overlay -->
+  <div id="enquiryModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
+    <div class="modal-backdrop fixed inset-0 bg-primary/50 backdrop-blur-sm cursor-pointer"></div>
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full max-w-lg relative z-10 text-left font-sans p-6 md:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+        <div>
+          <h3 class="text-xl font-bold font-display text-primary">Get Wholesale Quotation</h3>
+          <p class="preset-note text-xs text-gold font-semibold mt-0.5 hidden"></p>
+        </div>
+        <button class="close-modal text-gray-400 hover:text-gray-700 text-2xl transition-colors cursor-pointer">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="enquiry-success hidden py-8 text-center space-y-4">
+        <i class="ri-checkbox-circle-fill text-5xl text-secondary"></i>
+        <h4 class="text-xl font-bold font-display text-primary">Enquiry Submitted!</h4>
+        <p class="text-xs text-gray-500 font-sans leading-relaxed max-w-xs mx-auto">
+          WhatsApp will open with your requirements. Our sales desk will respond with factory quotation shortly.
+        </p>
+        <button class="close-modal bg-primary text-white text-xs font-bold px-6 py-2.5 rounded-full cursor-pointer">
+          Done
+        </button>
+      </div>
+
+      <form class="space-y-4 pt-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Full Name *</label>
+          <input type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Mobile / WhatsApp *</label>
+            <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Email Address</label>
+            <input type="email" name="email" placeholder="name@company.com" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Product Requirement</label>
+          <input type="text" name="requirement" placeholder="e.g. Primary Bags / Machinery Info" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Dimensions, Quantity & Notes</label>
+          <textarea name="message" rows="3" placeholder="Tell us about your packaging requirements..." class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20ba56] text-white text-xs font-bold py-3.5 rounded-xl transition-all cursor-pointer shadow-md flex items-center justify-center gap-2">
+          <i class="ri-whatsapp-line text-base"></i>
+          <span>Submit via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Pill -->
+  <a href="#enquiryModal" class="open-enquiry-modal fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba56] text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-transform hover:scale-105 group" aria-label="WhatsApp Us">
+    <i class="ri-whatsapp-line text-2xl"></i>
+    <span class="text-xs font-bold pr-1 hidden group-hover:inline-block transition-all">Chat with us</span>
+  </a>
+
+  <!-- Back to top -->
+  <button id="backToTopBtn" class="fixed bottom-6 left-6 z-40 bg-primary hover:bg-primary-light text-white p-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 cursor-pointer" aria-label="Back to top">
+    <i class="ri-arrow-up-line text-lg"></i>
+  </button>
+
+    <!-- React 18 Integration (Class names strictly related to file, Zero Vite, Zero Vanilla) -->
+  <div id="react-quick-enquiry-modal-root"></div>
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
+  <script src="js/vendor/babel.min.js"></script>
+  <script type="text/babel" src="js/react/QuickEnquiryModal.jsx"></script>
+
+  <!-- React 18 Application Core -->
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
+  <script src="js/react/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products | Bobby Packaging Sivakasi - Primary Bags, LD Rolls & Barrier Pouches</title>
+  <meta name="description" content="Explore Bobby Packaging's complete range of LD bags, HM bags, continuous LD rolls, PP bags, PET barrier pouches, and BOPP high-gloss covers in Sivakasi." />
+  <meta name="theme-color" content="#002140" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="css/remixicon.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1.1" />
+</head>
+<body class="font-sans bg-slate-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navigation -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/85 backdrop-blur-md border-b border-sky-100 shadow-sm py-4">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-white rounded-xl p-1.5 shadow-sm flex items-center justify-center transition-transform group-hover:scale-105 border border-sky-100">
+          <img src="images/logobg.png" alt="Bobby Packaging Logo" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <span class="brand-title font-display text-xl font-bold tracking-tight text-slate-900 transition-colors">Bobby Packaging</span>
+          <span class="brand-tagline text-[10px] tracking-wider uppercase font-semibold text-sky-600 hidden sm:block">Sivakasi, Tamil Nadu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav (Centered, Title Case like reference) -->
+      <nav id="navContainer" class="hidden lg:flex items-center gap-7 xl:gap-8">
+        <a href="index.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Home</a>
+        <a href="about.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">About Us</a>
+        <a href="products.html" class="nav-link font-semibold text-[15px] transition-colors py-1 text-sky-600 border-b-2 border-sky-500">Primary Bags</a>
+        <a href="films.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Specialty Films</a>
+        <a href="gallery.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Machinery & Works</a>
+        <a href="contact.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Contact</a>
+      </nav>
+
+      <!-- Action Button (WhatsApp Enquiry Pill like reference image) -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#enquiryModal" class="open-enquiry-modal bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md cursor-pointer flex items-center gap-2 group">
+          <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
+          <span>WhatsApp Enquiry</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menuToggle" class="lg:hidden text-slate-800 p-2 text-2xl focus:outline-none cursor-pointer" aria-label="Toggle navigation">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-sky-100 px-6 py-6 shadow-xl transition-all duration-300">
+      <div class="flex flex-col gap-3 text-center">
+        <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Home</a>
+        <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">About Us</a>
+        <a href="products.html" class="text-sm font-semibold text-sky-600 py-2">Primary Bags</a>
+        <a href="films.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Specialty Films</a>
+        <a href="gallery.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Machinery & Works</a>
+        <a href="contact.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Contact</a>
+        <div class="pt-4 border-t border-sky-100 flex flex-col gap-3">
+          <a href="#enquiryModal" class="open-enquiry-modal w-full bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold py-3 rounded-full cursor-pointer flex items-center justify-center gap-2 shadow-sm">
+            <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
+            <span>WhatsApp Enquiry</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Page Header with Background Image -->
+  <section class="relative pt-36 pb-20 text-center text-white bg-primary-dark overflow-hidden">
+    <div 
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('images/bobby-packaging.png')"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 space-y-3">
+      <span class="text-xs font-bold text-gold-light uppercase tracking-widest">Our Products</span>
+      <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold font-display leading-tight">
+        Explore our <span class="italic text-gold-light">Best Quality and Service</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- 2. Search & Filter panel -->
+  <section class="max-w-6xl mx-auto px-6 -mt-8 relative z-20">
+    <div class="bg-white rounded-2xl border border-gray-100 shadow-[0_10px_35px_-8px_rgba(0,33,64,0.06)] p-5 grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+      
+      <!-- Category Select -->
+      <div class="flex flex-col text-left">
+        <label for="filterCategory" class="text-xs font-semibold text-gray-500 mb-1.5 uppercase font-sans tracking-wide">Category</label>
+        <select
+          id="filterCategory"
+          class="w-full px-4 py-3 bg-slate-50 border border-gray-100 rounded-xl text-xs font-semibold outline-none text-gray-700"
+        >
+          <option value="">All Categories</option>
+          <option value="Primary Packaging">Primary Packaging</option>
+          <option value="Heavy-Duty">Heavy-Duty</option>
+          <option value="Specialty Films">Specialty Films</option>
+          <option value="Barrier Packaging">Barrier Packaging</option>
+          <option value="Retail Packaging">Retail Packaging</option>
+          <option value="Specialty Pouches">Specialty Pouches</option>
+        </select>
+      </div>
+
+      <!-- Application Select -->
+      <div class="flex flex-col text-left">
+        <label for="filterApplication" class="text-xs font-semibold text-gray-500 mb-1.5 uppercase font-sans tracking-wide">Application</label>
+        <select
+          id="filterApplication"
+          class="w-full px-4 py-3 bg-slate-50 border border-gray-100 rounded-xl text-xs font-semibold outline-none text-gray-700"
+        >
+          <option value="">Any Application</option>
+          <option value="Food">Food & Bakery</option>
+          <option value="Industrial">Industrial & Heavy</option>
+          <option value="Retail">Retail & Snacks</option>
+          <option value="Transit">Transit & Wrapping</option>
+          <option value="Cosmetics">Cosmetics & Stationery</option>
+        </select>
+      </div>
+
+      <!-- Format Select -->
+      <div class="flex flex-col text-left">
+        <label for="filterFormat" class="text-xs font-semibold text-gray-500 mb-1.5 uppercase font-sans tracking-wide">Format</label>
+        <select
+          id="filterFormat"
+          class="w-full px-4 py-3 bg-slate-50 border border-gray-100 rounded-xl text-xs font-semibold outline-none text-gray-700"
+        >
+          <option value="">All Formats</option>
+          <option value="Poly Bags">Poly Bags</option>
+          <option value="Roll Packaging">Roll Packaging</option>
+          <option value="Pouches">Pouches</option>
+        </select>
+      </div>
+
+      <!-- Action button -->
+      <button
+        id="btnRefineProducts"
+        class="w-full py-3 bg-primary hover:bg-primary-light text-white text-xs font-semibold rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md"
+      >
+        <i class="ri-filter-line text-sm"></i>
+        <span>Refine Search</span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- 3. Packages listing grid -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Product 1: LD Bags -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="ld-bags"
+        data-category="Primary Packaging"
+        data-application="Food & Textile"
+        data-format="Poly Bags"
+        data-title="LD Bags (Low-Density Polyethylene)"
+        data-tag="Versatile & Flexible"
+        data-rating="4.9"
+        data-duration="Food & Textile"
+        data-vehicle="LDPE Virgin Material"
+        data-image="images/bread-cover-1.jpg"
+        data-desc="LD bags, made from Low-Density Polyethylene (LDPE), are flexible, durable, and water-resistant, perfect for packaging food and textiles. Tailored for specific needs from lightweight items to bulk goods."
+        data-lead-time="Food & Textile Application"
+        data-material="LDPE Virgin Material"
+        data-highlights="Food-Grade & Hygienic Virgin Resin|High Flexibility & Moisture Resistance|Tailored Sizes & Thicknesses (Microns)|Ideal for Bread, Bakery & Garments|100% Recyclable & Eco-Friendly"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/bread-cover-1.jpg" alt="LD Bags" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Versatile & Flexible</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.9</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              LD Bags (Low-Density Polyethylene)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              LD bags, made from Low-Density Polyethylene (LDPE), are flexible, durable, and water-resistant, perfect for packaging food and textiles.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Food & Textile
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                LDPE Virgin Material
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Food-Grade & Hygienic Virgin Resin</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>High Flexibility & Moisture Resistance</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Tailored Sizes & Thicknesses (Microns)</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="LD Bags (Low-Density Polyethylene)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: HM Bags -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="hm-bags"
+        data-category="Heavy-Duty"
+        data-application="Industrial & Grocery"
+        data-format="Poly Bags"
+        data-title="HM Bags (High Molecular HDPE)"
+        data-tag="Heavy-Duty Strength"
+        data-rating="4.9"
+        data-duration="Industrial & Grocery"
+        data-vehicle="HM-HDPE Resin"
+        data-image="images/salt-cover.jpg"
+        data-desc="HM bags, made from High Molecular High-Density Polyethylene (HM-HDPE), are strong, durable, and resistant to punctures and tears. Ideal for heavy-duty industrial and grocery packaging."
+        data-lead-time="Industrial & Grocery Application"
+        data-material="HM-HDPE Resin"
+        data-highlights="High Molecular High-Density Polyethylene|Exceptional Puncture & Tear Resistance|Strong Load-Bearing Capacity|Commonly Used for Salt, Grains & Hardware|Customized Dimensions & Printing Available"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/salt-cover.jpg" alt="HM Bags" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Heavy-Duty Strength</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.9</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              HM Bags (High Molecular HDPE)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              HM bags, made from High Molecular High-Density Polyethylene (HM-HDPE), are strong, durable, and resistant to punctures and tears.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Industrial & Grocery
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                HM-HDPE Resin
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>High Molecular High-Density Polyethylene</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Exceptional Puncture & Tear Resistance</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Strong Load-Bearing Capacity</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="HM Bags (High Molecular HDPE)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: LD Roll -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="ld-roll"
+        data-category="Specialty Films"
+        data-application="Transit & Wrapping"
+        data-format="Roll Packaging"
+        data-title="LD Roll (Continuous Film Roll)"
+        data-tag="Specialty Film"
+        data-rating="4.8"
+        data-duration="Transit & Wrapping"
+        data-vehicle="LDPE Film Roll"
+        data-image="images/ld-roll2.jpg"
+        data-desc="LD rolls refer to continuous rolls of Low-Density Polyethylene (LDPE) film, known for their flexibility, clarity, and moisture resistance for wrapping, industrial protection, and automated packaging."
+        data-lead-time="Transit & Wrapping Application"
+        data-material="LDPE Film Roll"
+        data-highlights="Continuous Low-Density Polyethylene Sheet|Superior Flexibility, Clarity & Moisture Barrier|Ideal for Automated Packaging Machines|Protects Goods Securely During Transit|Available in Multiple Gauges and Widths"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/ld-roll2.jpg" alt="LD Rolls" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Specialty Film</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              LD Roll (Continuous Film Roll)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              LD rolls refer to continuous rolls of Low-Density Polyethylene (LDPE) film, known for flexibility, clarity, and moisture resistance.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Transit & Wrapping
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                LDPE Film Roll
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Continuous Low-Density Polyethylene Sheet</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Superior Flexibility, Clarity & Moisture Barrier</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Ideal for Automated Packaging Machines</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="LD Roll (Continuous Film Roll)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: PP Bags -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="pp-bags"
+        data-category="Primary Packaging"
+        data-application="Food, Snacks & Retail"
+        data-format="Poly Bags"
+        data-title="PP Bags (Polypropylene Bags)"
+        data-tag="High Clarity & Strength"
+        data-rating="4.8"
+        data-duration="Food, Snacks & Retail"
+        data-vehicle="Polypropylene Resin"
+        data-image="images/devinity-product-covers.jpg"
+        data-desc="PP bags, made from polypropylene, are durable and moisture-resistant, ideal for packaging food, textiles, and various products. Versatile across woven and non-woven formats for diverse packaging needs."
+        data-lead-time="Food, Snacks & Retail Application"
+        data-material="Polypropylene Resin"
+        data-highlights="Durable Polypropylene Resin Construction|Excellent Moisture Resistance & Stiffness|Woven and Non-Woven Custom Varieties|Preserves Crispness in Snacks & Dry Foods|Fully Recyclable & Environmentally Friendly"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/devinity-product-covers.jpg" alt="PP Bags" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">High Clarity & Strength</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              PP Bags (Polypropylene Bags)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              PP bags, made from polypropylene, are durable and moisture-resistant, ideal for packaging food, textiles, and snacks.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Food, Snacks & Retail
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                Polypropylene Resin
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Durable Polypropylene Resin Construction</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Excellent Moisture Resistance & Stiffness</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Preserves Crispness in Snacks & Dry Foods</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="PP Bags (Polypropylene Bags)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: PET Pouches -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="pet-pouches"
+        data-category="Barrier Packaging"
+        data-application="Detergent & Liquids"
+        data-format="Pouches"
+        data-title="PET Pouches (Barrier Pouches)"
+        data-tag="Oxygen & Aroma Barrier"
+        data-rating="5.0"
+        data-duration="Detergent & Liquids"
+        data-vehicle="PET Multi-layer Film"
+        data-image="images/detergent-bags.jpg"
+        data-desc="PET pouches are clear, strong, and provide high moisture and oxygen barrier properties, making them ideal for detergents, food products, and liquids while ensuring high shelf visibility."
+        data-lead-time="Detergent & Liquids Application"
+        data-material="PET Multi-layer Film"
+        data-highlights="Clear, Strong Polyethylene Terephthalate Material|Superior Moisture & Oxygen Barrier Properties|Preserves Product Freshness & Extended Shelf Life|High Content Visibility & Shelf Appeal|Stand-Up & Flat Pouch Formats Available"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/detergent-bags.jpg" alt="PET Pouches" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-gold text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Oxygen & Aroma Barrier</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>5.0</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              PET Pouches (Barrier Pouches)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              PET pouches are clear, strong, and provide high moisture and oxygen barrier properties, making them ideal for detergents and food.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Detergent & Liquids
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                PET Multi-layer Film
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Clear, Strong PET Multi-layer Material</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Superior Moisture & Oxygen Barrier Properties</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Stand-Up & Flat Pouch Formats Available</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="PET Pouches (Barrier Pouches)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: BOPP Bags -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="bopp-bags"
+        data-category="Retail Packaging"
+        data-application="Retail & Snacks"
+        data-format="Poly Bags"
+        data-title="BOPP Bags (Biaxially Oriented PP)"
+        data-tag="Premium Retail Finish"
+        data-rating="4.9"
+        data-duration="Snacks & Retail"
+        data-vehicle="BOPP Polymer Film"
+        data-image="images/boppbag.png"
+        data-desc="BOPP bags are made from biaxially oriented polypropylene, providing high tensile strength, outstanding clarity, and oil resistance, making them the standard for snacks and retail items."
+        data-lead-time="Snacks & Retail Application"
+        data-material="BOPP Polymer Film"
+        data-highlights="Biaxially Oriented Polypropylene Film|Crystal Clear Transparency & High Gloss Finish|Resistant to Oils, Fats & Moisture|Gusseted, Flat, & Resealable Options|Ideal for Retail Packaging & High-End Branding"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/boppbag.png" alt="BOPP Bags" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Premium Retail Finish</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.9</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              BOPP Bags (Biaxially Oriented PP)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              BOPP bags provide high tensile strength, outstanding clarity, and oil resistance, perfect for snacks and retail items.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Snacks & Retail
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                BOPP Polymer Film
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Biaxially Oriented Polypropylene Film</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Crystal Clear Transparency & High Gloss Finish</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Resistant to Oils, Fats & Moisture</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="BOPP Bags (Biaxially Oriented PP)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7: PVC Pouches -->
+      <div
+        class="product-catalog-card h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,33,64,0.06)] border border-gray-100 overflow-hidden flex flex-col text-left group cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-8px_rgba(0,33,64,0.12)]"
+        data-id="pvc-pouches"
+        data-category="Specialty Pouches"
+        data-application="Cosmetics & Stationery"
+        data-format="Pouches"
+        data-title="PVC Pouches (Display Pouches)"
+        data-tag="Transparent & Flexible"
+        data-rating="4.8"
+        data-duration="Cosmetics & Stationery"
+        data-vehicle="Polyvinyl Chloride"
+        data-image="images/pvc.webp"
+        data-desc="PVC pouches are versatile packaging solutions made from PVC material, known for durability, clarity, and flexibility, perfect for cosmetics, textiles, and stationery displays."
+        data-lead-time="Cosmetics & Stationery Application"
+        data-material="Polyvinyl Chloride"
+        data-highlights="Durable & High-Clarity PVC Material|Zip-Lock, Stand-Up & Hanging Hole Options|Exceptional Protection & Product Visibility|Commonly Used for Cosmetics, Textiles & Stationery|Water-Resistant and Flexible Construction"
+      >
+        <div class="relative h-64 overflow-hidden bg-slate-50">
+          <img src="images/pvc.webp" alt="PVC Pouches" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold font-sans tracking-widest px-2.5 py-1.5 rounded-md uppercase shadow-sm">Transparent & Flexible</span>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md flex items-center text-xs font-bold text-gray-800 shadow-sm">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+        <div class="p-6 flex-grow flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold font-display text-primary mb-3 leading-tight group-hover:text-primary-light transition-colors">
+              PVC Pouches (Display Pouches)
+            </h3>
+            <p class="text-xs text-gray-500 font-sans leading-relaxed line-clamp-2 mb-4">
+              PVC pouches are versatile packaging solutions made from PVC material, known for durability, clarity, and flexibility.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 text-xs font-sans font-medium text-gray-600">
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-time-line text-primary text-sm"></i>
+                Cosmetics & Stationery
+              </span>
+              <span class="bg-slate-50 border border-slate-100 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
+                <i class="ri-car-line text-primary text-sm"></i>
+                Polyvinyl Chloride
+              </span>
+            </div>
+            <ul class="space-y-2 mb-6 text-xs text-gray-600 font-sans">
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Durable & High-Clarity PVC Material</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Zip-Lock, Stand-Up & Hanging Hole Options</span></li>
+              <li class="flex items-start"><i class="ri-check-line text-secondary text-base mr-2 shrink-0 mt-0.5"></i><span>Exceptional Protection & Product Visibility</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button class="btn-product-details w-full text-xs font-semibold py-2.5 border border-gray-200 text-primary hover:bg-slate-50 rounded-xl transition-all cursor-pointer">
+              Details
+            </button>
+            <button class="open-enquiry-modal w-full text-xs font-semibold py-2.5 bg-secondary hover:bg-secondary-dark text-white rounded-xl transition-all cursor-pointer shadow-sm" data-product-title="PVC Pouches (Display Pouches)">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Empty State -->
+    <div id="productsEmptyState" class="hidden text-center py-20 bg-white rounded-2xl border border-gray-100 shadow-sm max-w-lg mx-auto">
+      <i class="ri-compass-line text-5xl text-gray-300 block mb-4"></i>
+      <h3 class="text-lg font-bold text-primary font-display mb-1">No Products Match</h3>
+      <p class="text-xs text-gray-500 font-sans max-w-xs mx-auto">
+        Try adjusting your category or application filters to explore our full product range.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. Bespoke Quote Banner -->
+  <section class="relative py-20 text-white overflow-hidden bg-black/60">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/infrastructure.jpg')">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
+      <h2 class="text-2xl md:text-4xl font-bold font-display leading-tight">
+        Need Custom Sizes, Gauges, or Branded Printing?
+      </h2>
+      <p class="text-sm md:text-base text-gray-300 max-w-xl mx-auto leading-relaxed font-sans">
+        Our packaging specialists manufacture customized bags, rolls, and pouches tailored to your specific dimensions, thickness, and brand aesthetics.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-center pt-2">
+        <button class="open-enquiry-modal w-full sm:w-auto bg-gold hover:bg-gold-dark text-white font-bold text-sm px-8 py-3.5 rounded-full cursor-pointer shadow-lg transition-all">
+          Get Custom Quote
+        </button>
+        <a href="#enquiryModal" class="open-enquiry-modal w-full sm:w-auto border-2 border-white/80 hover:bg-white hover:text-primary text-white font-bold text-sm px-8 py-3.5 rounded-full cursor-pointer transition-all">
+          Talk to an Expert
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center">
+            <img src="images/logobg.png" alt="Bobby Packaging" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <span class="font-display text-lg font-bold tracking-tight text-white block">Bobby Packaging</span>
+            <span class="text-[9px] tracking-widest uppercase font-bold text-gold-light">Sivakasi, Tamil Nadu</span>
+          </div>
+        </div>
+        <p class="text-xs text-gray-300 leading-relaxed font-sans">
+          Premier manufacturer of primary packing bags and specialty films founded by Aakash Arun. Located in Sivakasi with worldwide quality standards.
+        </p>
+        <div class="flex space-x-3 pt-2">
+          <a href="#" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+          <a href="#" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="tel:+918754002737" target="_blank" class="bg-white/10 hover:bg-gold p-2 rounded-lg text-white transition-colors" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Quick Navigation</h4>
+        <ul class="space-y-2.5 text-xs text-gray-300">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">Our Products</a></li>
+          <li><a href="films.html" class="hover:text-white transition-colors">Specialty Films</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Machinery Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Our Products</h4>
+        <ul class="space-y-2.5 text-xs text-gray-300">
+          <li><a href="products.html" class="hover:text-white transition-colors">LD Bags (Bakery Covers)</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">HM Bags (Heavy Duty)</a></li>
+          <li><a href="films.html" class="hover:text-white transition-colors">LD Rolls & Specialty Films</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">PP Bags (Garments)</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">PET Liquid Pouches</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">BOPP Snack Covers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase text-gold-light mb-4">Head Office & Plant</h4>
+        <div class="space-y-3 text-xs text-gray-300">
+          <p class="flex items-start gap-2.5">
+            <i class="ri-map-pin-2-line text-gold text-base shrink-0 mt-0.5"></i>
+            <span>1/527, H4 Unit Industrial Estate, Srivilliputtur Road, Sivakasi-626 124, Tamil Nadu, India</span>
+          </p>
+          <p class="flex items-center gap-2.5">
+            <i class="ri-phone-line text-gold text-base shrink-0"></i>
+            <a href="tel:+918754002737" class="hover:text-white">+91 87540 02737</a>
+          </p>
+          <p class="flex items-center gap-2.5">
+            <i class="ri-mail-line text-gold text-base shrink-0"></i>
+            <a href="mailto:bobbypackaging18@gmail.com" class="hover:text-white">bobbypackaging18@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+      <div>© 2026 Bobby Packaging. All Rights Reserved.</div>
+      <div>Designed for Excellence in Sivakasi, Tamil Nadu.</div>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal Overlay -->
+  <div id="productDetailModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
+    <div class="modal-backdrop fixed inset-0 bg-primary/45 backdrop-blur-sm cursor-pointer"></div>
+    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl relative z-10 text-left font-sans flex flex-col">
+      <div class="h-64 relative bg-slate-100">
+        <img src="" alt="" class="modal-img w-full h-full object-cover" />
+        <button class="close-modal absolute top-4 right-4 bg-black/55 hover:bg-black/80 text-white rounded-full p-2 text-xl transition-all cursor-pointer">
+          <i class="ri-close-line"></i>
+        </button>
+        <span class="modal-tag absolute bottom-4 left-4 bg-gold text-white font-sans text-[10px] font-bold px-2.5 py-1 rounded shadow-md uppercase tracking-wider"></span>
+      </div>
+
+      <div class="p-6 md:p-8 flex-grow overflow-y-auto max-h-[50vh]">
+        <div class="flex justify-between items-start gap-4 mb-4">
+          <h3 class="modal-title text-2xl md:text-3xl font-bold font-display text-primary leading-tight"></h3>
+          <div class="bg-slate-50 px-2.5 py-1 rounded flex items-center text-xs font-bold text-gray-700 shrink-0 border border-slate-100">
+            <i class="ri-star-fill text-[#EAB308] mr-1"></i>
+            <span>5.0</span>
+          </div>
+        </div>
+
+        <p class="modal-desc text-sm text-gray-500 font-sans leading-relaxed mb-6"></p>
+
+        <!-- Specs Chips -->
+        <div class="flex flex-wrap gap-2.5 mb-6 text-xs font-medium text-gray-600">
+          <span class="bg-slate-50 border border-slate-100 px-3 py-2 rounded-lg flex items-center gap-1.5">
+            <i class="ri-time-line text-primary text-base"></i>
+            <span class="modal-lead-time">Custom Bulk Order</span>
+          </span>
+          <span class="bg-slate-50 border border-slate-100 px-3 py-2 rounded-lg flex items-center gap-1.5">
+            <i class="ri-car-line text-primary text-base"></i>
+            <span class="modal-material">Virgin Polymer Material</span>
+          </span>
+        </div>
+
+        <!-- Highlights Checklist -->
+        <h4 class="text-sm font-bold uppercase text-primary tracking-wider mb-3">Product Highlights</h4>
+        <ul class="modal-highlights grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4"></ul>
+      </div>
+
+      <!-- Footer action -->
+      <div class="p-6 border-t border-gray-100 bg-slate-50 flex items-center justify-end gap-3 shrink-0">
+        <button class="close-modal px-5 py-2.5 text-xs font-semibold rounded-lg border border-gray-200 text-gray-600 hover:bg-white transition-all cursor-pointer">
+          Cancel
+        </button>
+        <button class="modal-enquire-btn px-6 py-2.5 text-xs font-semibold rounded-lg bg-secondary hover:bg-secondary-dark text-white transition-all cursor-pointer shadow-sm">
+          Enquire Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enquiry Modal Overlay -->
+  <div id="enquiryModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
+    <div class="modal-backdrop fixed inset-0 bg-primary/50 backdrop-blur-sm cursor-pointer"></div>
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full max-w-lg relative z-10 text-left font-sans p-6 md:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+        <div>
+          <h3 class="text-xl font-bold font-display text-primary">Get Wholesale Quotation</h3>
+          <p class="preset-note text-xs text-gold font-semibold mt-0.5 hidden"></p>
+        </div>
+        <button class="close-modal text-gray-400 hover:text-gray-700 text-2xl transition-colors cursor-pointer">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="enquiry-success hidden py-8 text-center space-y-4">
+        <i class="ri-checkbox-circle-fill text-5xl text-secondary"></i>
+        <h4 class="text-xl font-bold font-display text-primary">Enquiry Submitted!</h4>
+        <p class="text-xs text-gray-500 font-sans leading-relaxed max-w-xs mx-auto">
+          WhatsApp will open with your requirements. Our sales desk will respond with factory quotation shortly.
+        </p>
+        <button class="close-modal bg-primary text-white text-xs font-bold px-6 py-2.5 rounded-full cursor-pointer">
+          Done
+        </button>
+      </div>
+
+      <form class="space-y-4 pt-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Full Name *</label>
+          <input type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Mobile / WhatsApp *</label>
+            <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Email Address</label>
+            <input type="email" name="email" placeholder="name@company.com" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Product Requirement</label>
+          <input type="text" name="requirement" placeholder="e.g. LD Bread Covers / 50 Microns" class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Dimensions, Quantity & Notes</label>
+          <textarea name="message" rows="3" placeholder="Tell us sizes, quantity, microns, or printing requirements..." class="w-full px-4 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-primary"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20ba56] text-white text-xs font-bold py-3.5 rounded-xl transition-all cursor-pointer shadow-md flex items-center justify-center gap-2">
+          <i class="ri-whatsapp-line text-base"></i>
+          <span>Submit via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Pill -->
+  <a href="#enquiryModal" class="open-enquiry-modal fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba56] text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-transform hover:scale-105 group" aria-label="WhatsApp Us">
+    <i class="ri-whatsapp-line text-2xl"></i>
+    <span class="text-xs font-bold pr-1 hidden group-hover:inline-block transition-all">Chat with us</span>
+  </a>
+
+  <!-- Back to top -->
+  <button id="backToTopBtn" class="fixed bottom-6 left-6 z-40 bg-primary hover:bg-primary-light text-white p-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 cursor-pointer" aria-label="Back to top">
+    <i class="ri-arrow-up-line text-lg"></i>
+  </button>
+
+  <!-- React 18 Application Core -->
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
+  <script src="js/react/app.js"></script>
+</body>
+</html>
