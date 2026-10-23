@@ -32,7 +32,7 @@ export function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
+        <nav className="hidden lg:flex items-center gap-7 xl:gap-8 ml-auto">
           <a href="index.html" className="nav-link font-semibold text-[15px] transition-colors py-1 text-sky-600 border-b-2 border-sky-500">Home</a>
           <a href="about.html" className="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">About Us</a>
           <a href="products.html" className="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Primary Bags</a>
@@ -41,13 +41,6 @@ export function Navbar() {
           <a href="contact.html" className="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Contact</a>
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
-          <a href="#enquiryModal" className="open-enquiry-modal bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md cursor-pointer flex items-center gap-2 group">
-            <i className="ri-whatsapp-fill text-[#25D366] text-lg"></i>
-            <span>WhatsApp Enquiry</span>
-          </a>
-        </div>
-
         <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden text-slate-800 p-2 text-2xl focus:outline-none cursor-pointer" aria-label="Toggle navigation">
           <i className="ri-menu-line"></i>
         </button>
@@ -55,19 +48,13 @@ export function Navbar() {
 
       {mobileOpen && (
         <div className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-sky-100 px-6 py-6 shadow-xl transition-all duration-300">
-          <div className="flex flex-col gap-3 text-center">
+          <div className="flex flex-col gap-3 text-right">
             <a href="index.html" className="text-sm font-semibold text-sky-600 py-2">Home</a>
             <a href="about.html" className="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">About Us</a>
             <a href="products.html" className="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Primary Bags</a>
             <a href="films.html" className="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Specialty Films</a>
             <a href="gallery.html" className="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Machinery & Works</a>
             <a href="contact.html" className="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Contact</a>
-            <div className="pt-4 border-t border-sky-100 flex flex-col gap-3">
-              <a href="#enquiryModal" className="open-enquiry-modal w-full bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold py-3 rounded-full cursor-pointer flex items-center justify-center gap-2 shadow-sm">
-                <i className="ri-whatsapp-fill text-[#25D366] text-lg"></i>
-                <span>WhatsApp Enquiry</span>
-              </a>
-            </div>
           </div>
         </div>
       )}

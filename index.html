@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/remixicon.css" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=1.2" />
+  <link rel="stylesheet" href="css/style.css?v=2.0" />
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -53,8 +53,8 @@
         </div>
       </a>
 
-      <!-- Desktop Nav (Centered, Title Case like reference) -->
-      <nav id="navContainer" class="hidden lg:flex items-center gap-7 xl:gap-8">
+      <!-- Desktop Nav (Right Aligned) -->
+      <nav id="navContainer" class="hidden lg:flex items-center gap-7 xl:gap-8 ml-auto">
         <a href="index.html" class="nav-link font-semibold text-[15px] transition-colors py-1 text-sky-600 border-b-2 border-sky-500">Home</a>
         <a href="about.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">About Us</a>
         <a href="products.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Primary Bags</a>
@@ -62,14 +62,6 @@
         <a href="gallery.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Machinery & Works</a>
         <a href="contact.html" class="nav-link font-medium text-[15px] transition-colors py-1 text-slate-700 hover:text-sky-600">Contact</a>
       </nav>
-
-      <!-- Action Button (WhatsApp Enquiry Pill like reference image) -->
-      <div class="hidden md:flex items-center gap-4">
-        <a href="#enquiryModal" class="open-enquiry-modal bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md cursor-pointer flex items-center gap-2 group">
-          <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
-          <span>WhatsApp Enquiry</span>
-        </a>
-      </div>
 
       <!-- Mobile Hamburger Button -->
       <button id="menuToggle" class="lg:hidden text-slate-800 p-2 text-2xl focus:outline-none cursor-pointer" aria-label="Toggle navigation">
@@ -79,19 +71,13 @@
 
     <!-- Mobile Drawer Menu -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-sky-100 px-6 py-6 shadow-xl transition-all duration-300">
-      <div class="flex flex-col gap-3 text-center">
+      <div class="flex flex-col gap-3 text-right">
         <a href="index.html" class="text-sm font-semibold text-sky-600 py-2">Home</a>
         <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">About Us</a>
         <a href="products.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Primary Bags</a>
         <a href="films.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Specialty Films</a>
         <a href="gallery.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Machinery & Works</a>
         <a href="contact.html" class="text-sm font-medium text-slate-700 hover:text-sky-600 py-2">Contact</a>
-        <div class="pt-4 border-t border-sky-100 flex flex-col gap-3">
-          <a href="#enquiryModal" class="open-enquiry-modal w-full bg-[#002140] hover:bg-sky-900 text-white text-sm font-semibold py-3 rounded-full cursor-pointer flex items-center justify-center gap-2 shadow-sm">
-            <i class="ri-whatsapp-fill text-[#25D366] text-lg"></i>
-            <span>WhatsApp Enquiry</span>
-          </a>
-        </div>
       </div>
     </div>
   </header>
