@@ -58,6 +58,19 @@
       const mobileMenu = mobileMenuRef.current;
       if (!menuToggle || !mobileMenu) return;
 
+      const updateMenuIcon = (isOpen) => {
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          if (isOpen) {
+            icon.classList.remove('ri-menu-line');
+            icon.classList.add('ri-close-line');
+          } else {
+            icon.classList.remove('ri-close-line');
+            icon.classList.add('ri-menu-line');
+          }
+        }
+      };
+
       const toggleMenu = () => {
         setMobileOpen(prev => {
           const next = !prev;
@@ -66,6 +79,7 @@
           } else {
             mobileMenu.classList.add('hidden');
           }
+          updateMenuIcon(next);
           return next;
         });
       };
@@ -73,15 +87,26 @@
       const closeMenu = () => {
         setMobileOpen(false);
         mobileMenu.classList.add('hidden');
+        updateMenuIcon(false);
+      };
+
+      const handleOutsideClick = (e) => {
+        if (!mobileMenu.classList.contains('hidden') && 
+            !mobileMenu.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+          closeMenu();
+        }
       };
 
       menuToggle.addEventListener('click', toggleMenu);
       const links = mobileMenu.querySelectorAll('a');
       links.forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('click', handleOutsideClick);
 
       return () => {
         menuToggle.removeEventListener('click', toggleMenu);
         links.forEach(link => link.removeEventListener('click', closeMenu));
+        document.removeEventListener('click', handleOutsideClick);
       };
     }, []);
 

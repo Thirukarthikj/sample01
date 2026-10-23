@@ -228,34 +228,82 @@ header a[href*="wa.me"] i,
 /* Mobile Drawer Styling */
 #mobileMenu {
   background-color: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-top: 1px solid #e2e8f0;
-  padding: 1.25rem 1.5rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 33, 64, 0.1);
+  padding: 1.25rem 1.25rem 1.5rem;
+  box-shadow: 0 15px 30px -5px rgba(0, 33, 64, 0.12);
+  max-height: calc(100vh - 72px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 #mobileMenu.hidden {
   display: none !important;
 }
 
-#mobileMenu a {
-  display: block;
+#mobileMenu a:not(.open-enquiry-modal) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: 500;
   color: #334155;
-  padding: 0.6rem 0;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-#mobileMenu a:hover {
+#mobileMenu a:not(.open-enquiry-modal):hover {
+  background-color: #f0f9ff;
   color: #0284c7;
+  padding-left: 1.25rem;
 }
 
-#mobileMenu a.text-sky-600 {
-  color: #0284c7;
+#mobileMenu a.text-sky-600,
+#mobileMenu a.active {
+  background-color: #e0f2fe;
+  color: #0284c7 !important;
   font-weight: 600;
+}
+
+/* Floating Action Buttons & Footer Safe Spacing */
+#backToTopBtn {
+  bottom: 5.75rem !important;
+  right: 1.5rem !important;
+  left: auto !important;
+  width: 44px;
+  height: 44px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding-bottom: 6.5rem !important;
+}
+
+@media (min-width: 640px) {
+  footer {
+    padding-bottom: 2.5rem !important;
+  }
+}
+
+/* Mobile Banner & Hero Heading Adjustments */
+@media (max-width: 639px) {
+  .brand-title {
+    font-size: 1.1rem !important;
+  }
+  
+  #heroSection {
+    min-height: 560px !important;
+    height: auto !important;
+  }
+  
+  #heroPrevBtn, #heroNextBtn {
+    display: none !important;
+  }
 }
 
 /* ==========================================================================
@@ -303,6 +351,39 @@ section.bg-primary .text-gold,
 .bg-primary .text-gray-300,
 section.bg-primary .text-gray-300 {
   color: #e2e8f0 !important;
+}
+
+/* ==========================================================================
+   Global Mobile Responsiveness Enhancements
+   ========================================================================== */
+
+/* Inner page hero headers (About, Products, Films, Gallery, Contact, etc.) */
+section.pt-36 {
+  padding-top: 6.75rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+@media (min-width: 640px) {
+  section.pt-36 {
+    padding-top: 9rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+@media (max-width: 639px) {
+  section.pt-36 h1,
+  section.pt-36 h2,
+  section.py-24 h1,
+  section.py-24 h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+  }
+  
+  /* Ensure modal dialogue fits on mobile viewports */
+  .modal-backdrop + div {
+    max-height: 90vh !important;
+    margin: 1rem !important;
+  }
 }
 
 
