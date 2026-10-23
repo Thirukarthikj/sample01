@@ -71,6 +71,12 @@
           const next = !prev;
           if (next) {
             mobileMenu.classList.remove('hidden');
+            const header = headerRef.current;
+            if (header) {
+              header.style.transform = 'translateY(0)';
+              header.style.opacity = '1';
+              header.style.pointerEvents = 'auto';
+            }
           } else {
             mobileMenu.classList.add('hidden');
           }
