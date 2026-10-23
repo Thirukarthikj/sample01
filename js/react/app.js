@@ -28,21 +28,29 @@
     const [scrolled, setScrolled] = useState(window.scrollY > 20);
     const [mobileOpen, setMobileOpen] = useState(false);
 
-    // Scroll state management
+    // Scroll state management: hide on scroll, show at top
     useEffect(() => {
-      const handleScroll = () => {
-        const isPastThreshold = window.scrollY > 20;
-        setScrolled(isPastThreshold);
+      const header = headerRef.current;
+      if (!header) return;
 
-        const header = headerRef.current;
-        if (header) {
-          if (isPastThreshold) {
-            header.classList.add('bg-white/95', 'shadow-md', 'py-3');
-            header.classList.remove('bg-white/85', 'py-4', 'shadow-sm');
-          } else {
-            header.classList.add('bg-white/85', 'py-4', 'shadow-sm');
-            header.classList.remove('bg-white/95', 'shadow-md', 'py-3');
-          }
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY || document.documentElement.scrollTop;
+        const isAtTop = currentScrollY <= 25;
+        setScrolled(!isAtTop);
+
+        const mobileMenu = mobileMenuRef.current;
+        const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
+
+        if (isAtTop || isMenuOpen) {
+          header.style.transform = 'translateY(0)';
+          header.style.opacity = '1';
+          header.style.pointerEvents = 'auto';
+          header.classList.add('bg-white/85', 'py-4', 'shadow-sm');
+          header.classList.remove('bg-white/95', 'shadow-md', 'py-3');
+        } else {
+          header.style.transform = 'translateY(-100%)';
+          header.style.opacity = '0';
+          header.style.pointerEvents = 'none';
         }
       };
 
@@ -58,19 +66,6 @@
       const mobileMenu = mobileMenuRef.current;
       if (!menuToggle || !mobileMenu) return;
 
-      const updateMenuIcon = (isOpen) => {
-        const icon = menuToggle.querySelector('i');
-        if (icon) {
-          if (isOpen) {
-            icon.classList.remove('ri-menu-line');
-            icon.classList.add('ri-close-line');
-          } else {
-            icon.classList.remove('ri-close-line');
-            icon.classList.add('ri-menu-line');
-          }
-        }
-      };
-
       const toggleMenu = () => {
         setMobileOpen(prev => {
           const next = !prev;
@@ -79,7 +74,6 @@
           } else {
             mobileMenu.classList.add('hidden');
           }
-          updateMenuIcon(next);
           return next;
         });
       };
@@ -87,26 +81,15 @@
       const closeMenu = () => {
         setMobileOpen(false);
         mobileMenu.classList.add('hidden');
-        updateMenuIcon(false);
-      };
-
-      const handleOutsideClick = (e) => {
-        if (!mobileMenu.classList.contains('hidden') && 
-            !mobileMenu.contains(e.target) && 
-            !menuToggle.contains(e.target)) {
-          closeMenu();
-        }
       };
 
       menuToggle.addEventListener('click', toggleMenu);
       const links = mobileMenu.querySelectorAll('a');
       links.forEach(link => link.addEventListener('click', closeMenu));
-      document.addEventListener('click', handleOutsideClick);
 
       return () => {
         menuToggle.removeEventListener('click', toggleMenu);
         links.forEach(link => link.removeEventListener('click', closeMenu));
-        document.removeEventListener('click', handleOutsideClick);
       };
     }, []);
 
@@ -718,6 +701,7 @@
 
   /* ==========================================================================
      10. Back to Top Button Controller
+     Appears during scrolling, disappears when scrolling stops to avoid hiding text
      ========================================================================== */
   function useBackToTop() {
     const btn = document.getElementById('backToTopBtn');
@@ -725,13 +709,27 @@
     useEffect(() => {
       if (!btn) return;
 
+      let scrollTimeout = null;
+
       const handleScroll = () => {
-        if (window.scrollY > 300) {
+        const currentScrollY = window.scrollY || document.documentElement.scrollTop;
+
+        if (currentScrollY > 200) {
+          // Appears while scrolling
           btn.classList.remove('opacity-0', 'pointer-events-none');
-          btn.classList.add('opacity-100');
+          btn.classList.add('opacity-100', 'pointer-events-auto');
+
+          // Disappears when scrolling stops
+          if (scrollTimeout) clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(() => {
+            btn.classList.add('opacity-0', 'pointer-events-none');
+            btn.classList.remove('opacity-100', 'pointer-events-auto');
+          }, 1200);
         } else {
+          // Disappears when near the top
+          if (scrollTimeout) clearTimeout(scrollTimeout);
           btn.classList.add('opacity-0', 'pointer-events-none');
-          btn.classList.remove('opacity-100');
+          btn.classList.remove('opacity-100', 'pointer-events-auto');
         }
       };
 
@@ -739,12 +737,31 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
 
+      const handleMouseEnter = () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        btn.classList.remove('opacity-0', 'pointer-events-none');
+        btn.classList.add('opacity-100', 'pointer-events-auto');
+      };
+
+      const handleMouseLeave = () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          btn.classList.add('opacity-0', 'pointer-events-none');
+          btn.classList.remove('opacity-100', 'pointer-events-auto');
+        }, 800);
+      };
+
       window.addEventListener('scroll', handleScroll, { passive: true });
       btn.addEventListener('click', handleClick);
+      btn.addEventListener('mouseenter', handleMouseEnter);
+      btn.addEventListener('mouseleave', handleMouseLeave);
 
       return () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
         window.removeEventListener('scroll', handleScroll);
         btn.removeEventListener('click', handleClick);
+        btn.removeEventListener('mouseenter', handleMouseEnter);
+        btn.removeEventListener('mouseleave', handleMouseLeave);
       };
     }, [btn]);
   }

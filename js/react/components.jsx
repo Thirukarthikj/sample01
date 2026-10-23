@@ -234,11 +234,28 @@ export function EnquiryModal({ isOpen, onClose, defaultProduct = '' }) {
 // 4. Back to Top Button
 export function BackToTop() {
   const [visible, setVisible] = useState(false);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => setVisible(window.scrollY > 300);
+    const handleScroll = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      if (scrollY > 200) {
+        setVisible(true);
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => {
+          setVisible(false);
+        }, 1200);
+      } else {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        setVisible(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   if (!visible) return null;
@@ -246,6 +263,8 @@ export function BackToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      onMouseEnter={() => { if (timeoutRef.current) clearTimeout(timeoutRef.current); setVisible(true); }}
+      onMouseLeave={() => { timeoutRef.current = setTimeout(() => setVisible(false), 800); }}
       className="fixed bottom-6 left-6 z-40 bg-white/90 hover:bg-white text-primary p-3 rounded-full shadow-lg border border-sky-100 transition-all cursor-pointer"
       aria-label="Back to top"
     >
